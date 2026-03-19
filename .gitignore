@@ -1,0 +1,185 @@
+# =========================================================
+# Book System - .gitignore
+# 适用于：Spring Boot + Vue 3 + Vite + Maven + GitHub
+# =========================================================
+
+
+# =========================
+# IDE / 编辑器
+# =========================
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+.metadata/
+.factorypath
+
+
+# =========================
+# 操作系统文件
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.ctxt
+.mtj.tmp/
+
+
+# =========================
+# 后端 / Java / Spring Boot / Maven
+# =========================
+backend/target/
+target/
+build/
+out/
+
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+
+# Maven Wrapper 可保留，下面两行默认不忽略
+# .mvn/
+# mvnw
+# mvnw.cmd
+
+# Java 崩溃日志
+hs_err_pid*
+replay_pid*
+
+
+# =========================
+# 前端 / Node.js / Vue / Vite
+# =========================
+frontend/node_modules/
+node_modules/
+
+frontend/dist/
+dist/
+
+frontend/.vite/
+.vite/
+
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+
+# =========================
+# 环境变量
+# =========================
+.env
+.env.*
+!.env.example
+!.env.development.example
+!.env.production.example
+
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+!frontend/.env.development.example
+!frontend/.env.production.example
+
+backend/.env
+backend/.env.*
+
+
+# =========================
+# 日志
+# =========================
+*.log
+logs/
+*.out
+
+
+# =========================
+# 上传文件 / 运行时文件
+# =========================
+uploads/
+upload/
+files/
+temp/
+tmp/
+
+backend/uploads/
+backend/upload/
+backend/files/
+backend/temp/
+backend/tmp/
+
+frontend/public/uploads/
+frontend/src/assets/uploads/
+
+blog-system/uploads/
+blog_system/uploads/
+
+
+# =========================
+# 数据库 / 本地数据文件
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+*.h2.db
+*.mv.db
+
+
+# =========================
+# 测试 / 覆盖率
+# =========================
+coverage/
+.nyc_output/
+test-output/
+reports/
+
+
+# =========================
+# 打包压缩文件
+# =========================
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+
+# =========================
+# 缓存文件
+# =========================
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+
+# =========================
+# Git / 补丁 / 临时合并文件
+# =========================
+*.orig
+*.rej
+
+
+# =========================
+# 可按需忽略的本地文档
+# 如果 docs 要上传，就不要取消注释
+# =========================
+# docs/*.pdf
+# docs/*.docx
+# docs/*.tmp
+
+
+# =========================
+# 保留示例目录结构
+# 防止空目录被全部忽略时可手动加 .gitkeep
+# =========================
+!.gitkeep
